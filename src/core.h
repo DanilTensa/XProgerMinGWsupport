@@ -186,6 +186,7 @@
     #endif
     #define MERGE_SPRITES
     #define GENERATE_WATER_PLANE
+    #define SPLIT_BY_TILE
 #endif
 
 #include "utils.h"

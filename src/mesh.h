@@ -1519,7 +1519,7 @@ struct MeshBuilder {
     }
 
     void renderRoomSprites(int roomIndex) {
-    #ifndef MERGE_SPRITES
+    #if !defined(MERGE_SPRITES) || defined(SPLIT_BY_TILE)
         Core::mModel.identity();
         Core::mModel.setPos(Core::active.basis[0].pos);
 

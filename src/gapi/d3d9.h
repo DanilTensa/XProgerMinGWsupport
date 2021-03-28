@@ -359,8 +359,8 @@ namespace GAPI {
 
                 if (aniso) {
                     device->SetSamplerState(sampler, D3DSAMP_MINFILTER, D3DTEXF_ANISOTROPIC);
-                    device->SetSamplerState(sampler, D3DSAMP_MAGFILTER, D3DTEXF_LINEAR);
-                    device->SetSamplerState(sampler, D3DSAMP_MIPFILTER, D3DTEXF_NONE);
+                    device->SetSamplerState(sampler, D3DSAMP_MAGFILTER, D3DTEXF_ANISOTROPIC);
+                    device->SetSamplerState(sampler, D3DSAMP_MIPFILTER, D3DTEXF_ANISOTROPIC);
                     device->SetSamplerState(sampler, D3DSAMP_MAXANISOTROPY, support.maxAniso);
                 } else {
                     device->SetSamplerState(sampler, D3DSAMP_MINFILTER, filter ? D3DTEXF_LINEAR : D3DTEXF_POINT);
